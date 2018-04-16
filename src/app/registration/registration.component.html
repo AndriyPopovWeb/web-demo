@@ -1,0 +1,23 @@
+<form #userForm="ngForm" (ngSubmit)="onFormSubmit(userForm)">
+    <div class="form-group">
+        <label for="InputEmail">Email address</label>
+        <input ngModel type="email" required name="email" class="form-control" id="InputEmail" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label for="InputPassword">Password</label>
+        <input ngModel required minlength="6" name="password" type="password" class="form-control" id="InputPassword" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label for="InputName">Name</label>
+        <input ngModel name="name" type="text" class="form-control" placeholder="Name">
+    </div>
+    <div class="form-group">
+        <label for="InputSurName">Surname</label>
+        <input ngModel name="surname" type="text" class="form-control" placeholder="Surname">
+    </div>
+    <div class="form-group">
+        <label for="InputAge">Age</label>
+        <input ngModel name="age" type="text" class="form-control" placeholder="Age">
+    </div>
+    <button type="submit" class="btn btn-danger">Registration</button>
+</form>
